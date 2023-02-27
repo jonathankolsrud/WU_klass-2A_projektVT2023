@@ -1,0 +1,82 @@
+*{
+margin: 0px;
+}
+
+#gridwrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70px 500px 400px 400px 400px;
+    grid-template-areas: 
+    "he he"
+    "div1 div1"
+    "div2 div2"
+    "div3 div3"
+    "div4 div4"
+}
+
+header{
+    grid-area: he;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color: white;
+}
+
+#areas{
+width: 90%;
+height: 100%;
+align-items: center;
+justify-content: space-around;
+display: flex;
+flex-direction: row;
+}
+#middle_area{
+width: 15%; 
+}
+#right_area{
+width: 33%; 
+}
+#left_area{
+width: 33%; 
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+}
+
+#nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.1875rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#nav-links li {
+    list-style: none;
+}
+
+#index_section_1{
+    grid-area: div1;
+    background-image: url(../img/Index_bilder/sko1.png);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black ;
+}
+#index_section_2{
+    grid-area: div2;
+    border: 2px solid black ;
+    
+}
+#index_section_3{
+    grid-area: div3;
+    border: 2px solid black ;
+}
+#index_section_4{
+    grid-area: div4;
+    border: 2px solid black ;
+}
