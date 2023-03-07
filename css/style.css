@@ -1,5 +1,6 @@
 *{
 margin: 0px;
+padding: 0px;
 }
 
 #gridwrapper{
@@ -14,69 +15,151 @@ margin: 0px;
     "div4 div4"
 }
 
+/*header*/
 header{
     grid-area: he;
     background-color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-h1{
-    color: white;
+    display: flex;
+    justify-content: center;
 }
 
 #areas{
-width: 90%;
+width: 98%;
 height: 100%;
 align-items: center;
 justify-content: space-around;
 display: flex;
 flex-direction: row;
-}
-#middle_area{
-width: 15%; 
-}
-#right_area{
-width: 33%; 
-}
-#left_area{
-width: 33%; 
-}
 
-#nav-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around ;
 }
+/*middle_area*/
+    #middle_area{
+        width: 25%; 
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #brand_name_container{
 
-#nav-links a {
-    text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 0.1875rem;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-#nav-links li {
-    list-style: none;
-}
+    }
+    
+    h1{
+        color: white;
+        font-size: 26px;
 
+    }
+
+/*right_area*/
+    #right_area{
+        width: 35%;
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #interactive-logos-right-area{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 150px;
+    }
+
+    .interactive-logos-right{
+        width: 20px;
+    }
+    #interactive-logos-right-area img:hover {
+        opacity: 0.5;
+    }
+
+/*left_area*/
+    #left_area{
+        width: 35%; 
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+    }
+
+    #left_container{
+        display: flex;
+        justify-content: flex-start;
+        width: 380px;
+    }
+
+    #nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around ;
+        width: 100%;
+    }
+
+    #nav-links a {
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: 0.1875rem;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #nav-links li {
+        list-style: none;
+    }
+    #nav-links a:hover {
+        opacity: 0.5;
+    }
+
+/*index*/
+/*index_section_1*/
 #index_section_1{
     grid-area: div1;
+    border: 2px solid black ;
+    overflow: hidden;
+}
+
+#index_section_1_background_image{
     background-image: url(../img/Index_bilder/sko1.png);
     background-size: cover;
     background-position: center;
-    border: 2px solid black ;
+    height: 100%;
+    transition: 0.4s;
 }
+
+
+#index_section_1_background_image:hover{
+transition: 0.4s;
+transform: scale(1.02);
+}
+
+
+/*index_section_2*/
 #index_section_2{
     grid-area: div2;
     border: 2px solid black ;
     
 }
+
+/*index_section_3*/
 #index_section_3{
     grid-area: div3;
     border: 2px solid black ;
 }
+
+/*index_section_4*/
 #index_section_4{
     grid-area: div4;
     border: 2px solid black ;
+}
+
+@media screen and (max-width:900px) { 
+
+     #nav-links{
+        display: none;
+    }
+
+
+
 }

@@ -14,23 +14,40 @@
         <header>
             <div id="areas">
                 <div id="left_area">
-                    <nav>
+                    <nav id="left_container">
                         <ul id="nav-links" >
-                            <li><a href="#">Hem</a></li>
-                            <li><a href="#">Kläder</a></li>
-                            <li><a href="#">Skor</a></li>
-                            <li><a href="#">Tillbehör</a></li>
+                            <li><a href="index.html">Hem</a></li>
+                            <li><a href="klader.html">Kläder</a></li>
+                            <li><a href="skor.html">Skor</a></li>
+                            <li><a href="tillbehor.html">Tillbehör</a></li>
                         </ul>
                     </nav>    
                 </div>
-                <div id="middle_area"><h1>HIGHENDDROPS</h1></div>
-
-                <div id="right_area"></div>
-            </div>
+                <div id="middle_area">
+                    <div onclick="location.href='index.html'" style="cursor: pointer;" id="brand_name_container">
+                        <h1>HIGHENDDROPS</h1>
+                    </div>
+                </div>
+                <div id="right_area">
+                    <ul id="interactive-logos-right-area" >
+                        <li><img onclick="location.href='null.html'" style="cursor: pointer;" class="interactive-logos-right" src="img/icons/user.png" alt="user"></li>
+                        <li><img onclick="location.href='null.html'" style="cursor: pointer;" class="interactive-logos-right" src="img/icons/search-interface-symbol.png" alt="search"></li>
+                        <li><img onclick="location.href='null.html'" style="cursor: pointer;" class="interactive-logos-right" src="img/icons/heart.png" alt="heart"></li>
+                        <li><img onclick="location.href='null.html'" style="cursor: pointer;" class="interactive-logos-right" src="img/icons/shopping-cart.png" alt="shopping-cart"></li>
+                    </ul>
+                </div>
         </header>
 
-        <section id="index_section_1"></section>
+        <section id="index_section_1">
+            <div id="index_section_1_background_image"></div>
+        </section>
         <section id="index_section_2"></section>
+        <div class="wrapper">
+            <div class="item_wrapper">box-1</div>
+            <div class="item_wrapper">box-2</div>
+            <div class="item_wrapper">box-3</div>
+            <div class="item_wrapper">box-4</div>
+        </div>
         <section id="index_section_3"></section>
         <section id="index_section_4"></section>
     
