@@ -6,7 +6,7 @@ padding: 0px;
 #gridwrapper{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 70px 550px 400px 400px 400px;
+    grid-template-rows: 70px 500px 400px 400px 400px;
     grid-template-areas: 
     "he he"
     "div1 div1"
@@ -33,52 +33,36 @@ display: flex;
 flex-direction: row;
 
 }
-/*middle_area*/
-    #middle_area{
-        width: 25%; 
-        height: 100%; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #brand_name_container{
-    }
-    
-    h1{
-        color: white;
-        font-size: 28px;
-        font-family: ;
-
-    }
-
-/*right_area*/
-    #right_area{
-        width: 35%;
-        height: 100%; 
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    #interactive-logos-right-area{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 150px;
-    }
-
-    #interactive-logos-right-area li{
-        list-style: none;
-    }
-
-    .interactive-logos-right{
-        width: 20px;
-    }
-    #interactive-logos-right-area img:hover {
-        opacity: 0.5;
-    }
 
 /*left_area*/
+    #burger div{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 0%;
+        transition: all 0.4s;
+    }
+
+    #burger {
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    .burger_toggle #burger_line_2 {
+    opacity: 0;
+
+    }
+
+    .burger_toggle #burger_line_1{
+        transform: rotate(-45deg) translate(-5px, 6.3px);
+
+    }
+
+    .burger_toggle #burger_line_3 {
+    transform: rotate(45deg) translate(-5px, -6.3px);
+    }
+    
     #left_area{
         width: 35%; 
         height: 100%;
@@ -87,17 +71,26 @@ flex-direction: row;
         justify-content: flex-start; 
     }
 
-    #left_container{
-        display: flex;
-        justify-content: flex-start;
-        width: 380px;
+    #left_container{  
+        position: absolute;
+        top: 69px;
+        left: -210px;
+        background-color: black;
+        width: 200px;
+        height: 400px;
     }
 
     #nav-links{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around ;
-        width: 100%;
+        flex-direction: column;
+        width: 100px;
+        margin-left: 8px;
+    }
+
+    #left_container{
+        transition: transform 0.3s;
+    }
+    .nav_active {
+        transform: translateX(209px);
     }
 
     #nav-links a {
@@ -115,6 +108,53 @@ flex-direction: row;
     #nav-links a:hover {
         opacity: 0.5;
     }
+
+/*middle_area*/
+    #middle_area{
+        width: 25%; 
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #brand_name_container{
+    }
+    
+    h1{
+        color: white;
+        font-size: 20px;
+        font-family: ;
+
+    }
+
+/*right_area*/
+    #right_area{
+        width: 35%;
+        height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #interactive-logos-right-area{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90px;
+    }
+
+    #interactive-logos-right-area li{
+        list-style: none;
+    }
+
+    .interactive-logos-right{
+        width: 19px;
+    }
+    #interactive-logos-right-area img:hover {
+        opacity: 0.5;
+    }
+
+
 
 /*index*/
 /*index_section_1*/
@@ -161,12 +201,12 @@ transform: scale(1.02);
 }
 
 
-@media screen and (max-width:900px) { 
+@media screen and (min-width:900px) { 
   
     #gridwrapper{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 70px 500px 400px 400px 400px;
+        grid-template-rows: 70px 550px 400px 400px 400px;
         grid-template-areas: 
         "he he"
         "div1 div1"
@@ -178,57 +218,32 @@ transform: scale(1.02);
 
 /*left_area*/
     
-    #burger div{
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        margin: 5px;
-        border-radius: 0%;
-        transition: all 0.4s;
+    #burger-container{
+        display: none;
     }
 
-    #burger {
-        margin-right: 50px;
-        cursor: pointer;
-    }
     
-    .burger_toggle #burger_line_2 {
-    opacity: 0;
-
-    }
-    
-    .burger_toggle #burger_line_1{
-        transform: rotate(-45deg) translate(-5px, 6.3px);
-
-    }
-    
-    .burger_toggle #burger_line_3 {
-    transform: rotate(45deg) translate(-5px, -6.3px);
-    }
 
     #left_container{
-        position: absolute;
-        top: 69px;
-        left: -210px;
-        background-color: black;
-        width: 200px;
-        height: 400px;
-        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 400px;
+        position: relative;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: 0;
+
     }
 
     #nav-links{
-        flex-direction: column;
-        width: 100px;
-        margin-left: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around ;
+        width: 100%;
     }
-
-
-    #left_container{
-        transition: transform 0.3s;
-    }
-    .nav_active {
-        transform: translateX(209px);
-    }
+    
 
 /*middle_area*/
     #middle_area{
@@ -237,16 +252,16 @@ transform: scale(1.02);
     }
     h1{
         color: white;
-        font-size: 20px;
+        font-size: 28px;
     }
 
 /*right_area*/
     #interactive-logos-right-area{
-        width: 90px;
+        width: 150px;
     }
 
     .interactive-logos-right{
-        width: 19px;
+        width: 20px;
     }
     
 
