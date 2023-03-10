@@ -6,7 +6,7 @@ padding: 0px;
 #gridwrapper{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 70px 500px 400px 400px 400px;
+    grid-template-rows: 70px 550px 400px 400px 400px;
     grid-template-areas: 
     "he he"
     "div1 div1"
@@ -42,12 +42,12 @@ flex-direction: row;
         justify-content: center;
     }
     #brand_name_container{
-
     }
     
     h1{
         color: white;
-        font-size: 26px;
+        font-size: 28px;
+        font-family: ;
 
     }
 
@@ -65,6 +65,10 @@ flex-direction: row;
         flex-direction: row;
         justify-content: space-around;
         width: 150px;
+    }
+
+    #interactive-logos-right-area li{
+        list-style: none;
     }
 
     .interactive-logos-right{
@@ -129,10 +133,12 @@ flex-direction: row;
 }
 
 
+/*
 #index_section_1_background_image:hover{
 transition: 0.4s;
 transform: scale(1.02);
 }
+*/
 
 
 /*index_section_2*/
@@ -154,12 +160,94 @@ transform: scale(1.02);
     border: 2px solid black ;
 }
 
-@media screen and (max-width:900px) { 
 
-     #nav-links{
-        display: none;
+@media screen and (max-width:900px) { 
+  
+    #gridwrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 70px 500px 400px 400px 400px;
+        grid-template-areas: 
+        "he he"
+        "div1 div1"
+        "div2 div2"
+        "div3 div3"
+        "div4 div4"
     }
 
 
+/*left_area*/
+    
+    #burger div{
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 0%;
+        transition: all 0.4s;
+    }
+
+    #burger {
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    
+    .burger_toggle #burger_line_2 {
+    opacity: 0;
+
+    }
+    
+    .burger_toggle #burger_line_1{
+        transform: rotate(-45deg) translate(-5px, 6.3px);
+
+    }
+    
+    .burger_toggle #burger_line_3 {
+    transform: rotate(45deg) translate(-5px, -6.3px);
+    }
+
+    #left_container{
+        position: absolute;
+        top: 69px;
+        left: -210px;
+        background-color: black;
+        width: 200px;
+        height: 400px;
+        
+    }
+
+    #nav-links{
+        flex-direction: column;
+        width: 100px;
+        margin-left: 8px;
+    }
+
+
+    #left_container{
+        transition: transform 0.3s;
+    }
+    .nav_active {
+        transform: translateX(209px);
+    }
+
+/*middle_area*/
+    #middle_area{
+        width: 25%; 
+        height: 100%; 
+    }
+    h1{
+        color: white;
+        font-size: 20px;
+    }
+
+/*right_area*/
+    #interactive-logos-right-area{
+        width: 90px;
+    }
+
+    .interactive-logos-right{
+        width: 19px;
+    }
+    
 
 }
