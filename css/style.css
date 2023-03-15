@@ -150,7 +150,7 @@ padding: 0px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 90px;
+        width: 70px;
     }
 
     #interactive-logos-right-area li{
@@ -158,7 +158,7 @@ padding: 0px;
     }
 
     .interactive-logos-right{
-        width: 19px;
+        width: 18px;
     }
     #interactive-logos-right-area img:hover {
         opacity: 0.5;
@@ -190,7 +190,7 @@ padding: 0px;
     }
 
     .footer_section{
-        width: 23%;
+        width: 50%;
         display: flex;
         justify-content: center;
         flex-direction: column;.
@@ -215,7 +215,7 @@ padding: 0px;
     #footer_bottom_text{
         color:grey;
         font-family: 'Anton', sans-serif;
-        font-size: 2vh;
+        font-size: 0.8rem;
     }
 
     #footer_socialmedia{
@@ -223,9 +223,9 @@ padding: 0px;
     }
 
     .footer_socialmedia_logo{
-        width: 5vh;
-        margin-top: 2vh;
-        margin-right: 3vh;
+        width: 25px;
+        margin-top: 5px;
+        margin-right: 10px;
     }
 
 /*footer end*/
