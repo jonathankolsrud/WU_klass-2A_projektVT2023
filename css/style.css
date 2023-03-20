@@ -274,6 +274,25 @@ transform: scale(1.02);
     border: 2px solid black ;
 }
 
+/* Om Oss */
+
+#gridwrapper2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70px 300px 400px 400px 400px 400px;
+    grid-template-areas: 
+    "he he"
+    "div1 div1"
+    "div2 div2"
+    "div3 div3"
+    "div4 div4"
+    "fo fo"
+}
+
+
+
+/* Om Oss- end */
+
 
 @media screen and (min-width:900px) { 
   
