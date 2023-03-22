@@ -25,6 +25,7 @@ padding: 0px;
         justify-content: center;
         position: sticky;
         top: 0px;
+        z-index: 1;
     }
 
     #areas{
@@ -114,6 +115,7 @@ padding: 0px;
     }
     #nav-links a:hover {
         opacity: 0.5;
+        
     }
 
 /*middle_area*/
@@ -236,6 +238,7 @@ padding: 0px;
     grid-area: div1;
     border: 2px solid black ;
     overflow: hidden;
+    
 }
 
 #index_section_1_background_image{
@@ -247,12 +250,13 @@ padding: 0px;
 }
 
 
-/*
+
 #index_section_1_background_image:hover{
-transition: 0.4s;
-transform: scale(1.02);
+    transition: 0.4s;
+    transform: scale(1.02);
+    z-index: 0;
 }
-*/
+
 
 
 /*index_section_2*/
@@ -274,6 +278,8 @@ transform: scale(1.02);
     border: 2px solid black ;
 }
 
+/* index end */
+
 /* Om Oss */
 
 #gridwrapper2{
@@ -288,6 +294,44 @@ transform: scale(1.02);
     "div4 div4"
     "fo fo"
 }
+
+/* om_oss_section_1*/
+#om_oss_section_1{
+    grid-area: div1;
+    border: 1px solid black ;
+    overflow: hidden;
+}
+
+#om_oss_section_1_background_image{
+    background-image: url(../img/om_oss_bilder/huy-nguyen-YhP-E5YwOGE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    transition: 0.4s;
+}
+
+#om_oss_section_1_background_image:hover{
+    transition: 0.4s;
+    transform: scale(1.01);
+    z-index: 0;
+}
+
+
+#om_oss_section_2{
+    grid-area: div2;
+    border: 1px solid black ;
+}
+
+#om_oss_section_3{
+    grid-area: div3;
+    border: 1px solid black ;
+}
+
+#om_oss_section_4{
+    grid-area: div3;
+    border: 1px solid black ;
+}
+
 
 
 
