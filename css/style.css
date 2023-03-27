@@ -5,15 +5,15 @@ padding: 0px;
 
 #gridwrapper{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-rows: 70px 500px 400px 400px 400px 400px;
     grid-template-areas: 
-    "he he"
-    "div1 div1"
-    "div2 div2"
-    "div3 div3"
-    "div4 div4"
-    "fo fo"
+    "he"
+    "div1"
+    "div2"
+    "div3"
+    "div4"
+    "fo"
 }
 
 /*header*/
@@ -284,15 +284,67 @@ padding: 0px;
 
 #gridwrapper2{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 70px 300px 400px 400px 400px 400px;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 200px 500px 500px 500px 500px;
     grid-template-areas: 
-    "he he"
-    "div1 div1"
-    "div2 div2"
-    "div3 div3"
-    "div4 div4"
-    "fo fo"
+    "he"
+    "div1"
+    "div2"
+    "div3"
+    "div4"
+    "fo"
+}
+
+.om_oss_section{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "im"
+    "te";
+}
+
+.om_oss_section_text_container{
+    grid-area: te;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.om_oss_section_text{
+    height: 100px;
+    width: 250px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+.om_oss_h2{
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+
+.om_oss_section_image_container{
+    grid-area: im;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.om_oss_section_image{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    
+    object-fit: cover;
+    object-position: center;
 }
 
 /* om_oss_section_1*/
@@ -303,7 +355,7 @@ padding: 0px;
 }
 
 #om_oss_section_1_background_image{
-    background-image: url(../img/om_oss_bilder/huy-nguyen-YhP-E5YwOGE-unsplash.jpg);
+    background-image: url(../img/om_oss_bilder/wardrobe.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -316,21 +368,21 @@ padding: 0px;
     z-index: 0;
 }
 
+/* om_oss_section_1 end*/
 
-#om_oss_section_2{
-    grid-area: div2;
-    border: 1px solid black ;
-}
+/* om_oss_section_2*/
 
-#om_oss_section_3{
-    grid-area: div3;
-    border: 1px solid black ;
-}
+/* om_oss_section_2 end*/
 
-#om_oss_section_4{
-    grid-area: div3;
-    border: 1px solid black ;
-}
+/* om_oss_section_3*/
+
+
+/* om_oss_section_3 end*/
+
+/* om_oss_section_4*/
+
+
+/* om_oss_section_4 end*/
 
 
 
@@ -447,5 +499,69 @@ padding: 0px;
     }
 
 /*footer end*/
+
+
+
+/* Om Oss */
+#gridwrapper2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 300px 400px 400px 400px 400px;
+    grid-template-areas: 
+    "he"
+    "div1"
+    "div2"
+    "div3"
+    "div4"
+    "fo"
+}
+
+.om_oss_section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "te im";
+}
+
+.om_oss_section_text_container{
+    grid-area: te;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.om_oss_section_text{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+.om_oss_h2{
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.om_oss_section_image_container{
+    grid-area: im;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.om_oss_section_image{
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 }
