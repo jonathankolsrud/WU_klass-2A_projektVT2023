@@ -26,6 +26,8 @@ padding: 0px;
         position: sticky;
         top: 0px;
         z-index: 1;
+        height: 100%;
+        width: 100%;
     }
 
     #areas{
@@ -174,10 +176,12 @@ padding: 0px;
         grid-area: fo;
         background-color: black;
         height: 100%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
+
     }
 
     #footer_container{
@@ -285,57 +289,68 @@ padding: 0px;
 #gridwrapper2{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 200px 500px 500px 500px 500px;
+    grid-template-rows: 70px 200px 450px 450px 450px 450px;
     grid-template-areas: 
     "he"
     "div1"
     "div2"
-    "div3"
-    "div4"
-    "fo"
+   
+    "fo";
+    place-items: center;
+    
 }
 
 .om_oss_section{
-    border: 1px solid black;
+    width: 90%;
+    border-bottom: 1px solid black;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 200px 200px;
     grid-template-areas:
     "im"
     "te";
+    
 }
 
 .om_oss_section_text_container{
     grid-area: te;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    height: 100%;
+    margin-top: 10px;
+   
 }
 
 .om_oss_section_text{
-    height: 100px;
-    width: 250px;
-    
+    width: 100%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
+    border-radius: ;
 }
 
 .om_oss_h2{
     font-family: 'Anton', sans-serif;
-    margin-bottom: 16px;
-    font-size: 25px;
+    margin-bottom: ;
+    font-size: 23px;
+}
+
+.om_oss_text{
+    font-size: 13px;
 }
 
 .om_oss_section_image_container{
     grid-area: im;
+    height: ;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: ;
+    
 }
 
 .om_oss_section_image{
@@ -352,6 +367,8 @@ padding: 0px;
     grid-area: div1;
     border: 1px solid black ;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 #om_oss_section_1_background_image{
@@ -556,8 +573,8 @@ padding: 0px;
 }
 
 .om_oss_section_image{
-    width: 550px;
-    height: 350px;
+    width: 500px;
+    height: 300px;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
