@@ -347,13 +347,109 @@ text-decoration: underline;
 #gridwrapper2{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:  70px 200px 1000px 420px;
+    grid-template-rows:  70px 160px auto 420px;
     grid-template-areas: 
     "he "
     "div1"
     "div2"
     "fo"
 }
+
+.shop_section_1{
+    grid-area: div1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop_info_h2{
+font-size: 25px;
+font-family: 'Anton', sans-serif;
+}
+
+.shop_info_p{
+    font-size: 12px;
+}
+
+.shop_info{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Nunito Sans ,sans-serif;
+
+}
+
+.shop_section_2{
+    grid-area: div2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+
+.card_container{
+    width: 48%;
+    height:  fit-content;
+    margin: 1%;
+   background-color: rgb(231, 231, 231);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: 0.2s;
+}
+
+.card_container:hover{
+    scale: 1.02;
+    transition: 0.2s;
+}
+
+.cards_images{
+    max-width: 100%;
+    --aspect-ratio: 1.0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cards_info{
+display: flex;
+flex-direction: row;
+width: 98%
+}
+
+.cards_info_left{
+width: 70%;
+display: flex;
+justify-content: flex-start;
+}
+
+.cards_info_right{
+width: 30%;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+}
+.cards_info_1{
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+}
+
+.cards_info_2{
+    font-family: 'Anton', sans-serif;
+    font-size: 12px;
+}
+
+.cards_info_3{
+    font-family: 'Anton', sans-serif;
+    font-size: 12px;
+}
+
+
+
+
 
 /*skor end*/
 
@@ -614,6 +710,69 @@ text-decoration: underline;
     top: 230px;
     font-size: 40px;
 }
+
+/*skor*/
+#gridwrapper2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  70px 200px auto 420px;
+    grid-template-areas: 
+    "he "
+    "div1"
+    "div2"
+    "fo"
+}
+
+.shop_section_1{
+    grid-area: div1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop_info{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Nunito Sans ,sans-serif;
+
+}
+
+.shop_section_2{
+    grid-area: div2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+
+.card_container{
+    min-width: 200px ;
+    width: 24%;
+    height: fit-content;
+    margin: 0.5%;
+}
+
+.cards_info_1{
+    font-size: 18px;
+}
+
+.cards_info_2{
+    font-family: 'Anton', sans-serif;
+    font-size: 17px;
+}
+
+.cards_info_3{
+    font-family: 'Anton', sans-serif;
+    font-size: 14px;
+}
+
+
+
+/*skor end*/
 
 
 /* Om Oss */
