@@ -5,15 +5,14 @@ padding: 0px;
 
 #gridwrapper{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 70px 500px 400px 400px 400px 400px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  70px minmax(500px, 95vh)  400px 300px 400px;
     grid-template-areas: 
-    "he"
-    "div1"
-    "div2"
-    "div3"
-    "div4"
-    "fo"
+    "he he"
+    "div1 div1"
+    "div2 div4"
+    "div3 div3"
+    "fo fo"
 }
 
 /*header*/
@@ -246,53 +245,125 @@ padding: 0px;
 /*index_section_1*/
 #index_section_1{
     grid-area: div1;
-    border: 2px solid black ;
-    overflow: hidden;
-    
+    border: 1px solid black ;
 }
 
 #index_section_1_background_image{
-    background-image: url(../img/Index_bilder/sko1.png);
+    background-image: url(../img/Index_bilder/indextop.png);
     background-size: cover;
     background-position: center;
     height: 100%;
-    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+#index_section_1_text{
+    color: white;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+#index_arrow{
+    width: 70px;
 
+}
+/*categories*/
+.categories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid white;
+  overflow: hidden;
+}
 
-#index_section_1_background_image:hover{
+.categories_background_image{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    
+}
+
+.categories_background_image:hover{
     transition: 0.4s;
     transform: scale(1.02);
-    z-index: 0;
 }
 
+.categories_text{
+color: white;
+font-size: 34px;
+position: relative;
+top: 100px;
+font-family: 'Anton', sans-serif;
+text-transform: uppercase;
+text-decoration: underline;
+}
 
+.categories_text:hover{
+   color: black;
+   
+}
 
 /*index_section_2*/
 #index_section_2{
     grid-area: div2;
-    border: 2px solid black ;
+}
+
+#index_section_2_background_image{
+    background-image: url(../img/Index_bilder/Skor.png);
     
 }
+
 
 /*index_section_3*/
 #index_section_3{
     grid-area: div3;
-    border: 2px solid black ;
+}
+
+#index_section_3_background_image{
+    background-image: url(../img/Index_bilder/Klader.png);
+    
 }
 
 /*index_section_4*/
 #index_section_4{
     grid-area: div4;
-    border: 2px solid black ;
+}
+
+#index_section_4_background_image{
+    background-image: url(../img/Index_bilder/Tillbehor.png);
 }
 
 /* index end */
 
+/*skor*/
+#gridwrapper2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  70px 200px 1000px 420px;
+    grid-template-areas: 
+    "he "
+    "div1"
+    "div2"
+    "fo"
+}
+
+/*skor end*/
+
+
+
+
+
 /* Om Oss */
 
-#gridwrapper2{
+#gridwrapper5{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 70px 200px 15px 420px 420px 420px 420px;
@@ -431,15 +502,13 @@ padding: 0px;
   
     #gridwrapper{
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 70px 550px 400px 400px 400px 300px;
+        grid-template-columns:  33.33% 33.33% 33.33%;
+        grid-template-rows: 70px 90vh  minmax(400px, 90vh)  300px;
         grid-template-areas: 
-        "he he"
-        "div1 div1"
-        "div2 div2"
-        "div3 div3"
-        "div4 div4"
-        "fo fo"
+        "he he he"
+        "div1 div1 div1"
+        "div2 div3 div4"
+        "fo fo fo"
     }
 
 /*header*/
@@ -537,10 +606,18 @@ padding: 0px;
 
 /*footer end*/
 
+/*index*/
+#index_section_1_text{
+    font-size: 37px;
+}
+.categories_text{ 
+    top: 230px;
+    font-size: 40px;
+}
 
 
 /* Om Oss */
-#gridwrapper2{
+#gridwrapper5{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 70px 300px 400px 400px 400px 400px;
