@@ -408,8 +408,8 @@ font-family: 'Anton', sans-serif;
 }
 
 .cards_images{
-    max-width: 100%;
-    --aspect-ratio: 1.0;
+    width: 100%;
+    aspect-ratio: 1.0;
     object-fit: cover;
     object-position: center;
 }
@@ -435,6 +435,7 @@ flex-direction: column;
 .cards_info_1{
     font-family: 'Anton', sans-serif;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
 .cards_info_2{
