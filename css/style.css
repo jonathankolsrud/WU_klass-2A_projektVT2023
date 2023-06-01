@@ -213,6 +213,7 @@ padding: 0px;
         font-size: 1.1rem;
         margin: 2px;
         color: white;
+        text-decoration: none;
     }
 
     #footer_title{
@@ -249,7 +250,7 @@ padding: 0px;
 }
 
 #index_section_1_background_image{
-    background-image: url(../img/Index_bilder/indextop.png);
+    background-image: url(../img/Index_bilder/indextop2.webp);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -317,7 +318,7 @@ text-decoration: underline;
 }
 
 #index_section_2_background_image{
-    background-image: url(../img/Index_bilder/Skor.png);
+    background-image: url(../img/Index_bilder/skor2.webp);
     
 }
 
@@ -328,7 +329,7 @@ text-decoration: underline;
 }
 
 #index_section_3_background_image{
-    background-image: url(../img/Index_bilder/Klader.png);
+    background-image: url(../img/Index_bilder/Klader2.webp);
     
 }
 
@@ -338,7 +339,7 @@ text-decoration: underline;
 }
 
 #index_section_4_background_image{
-    background-image: url(../img/Index_bilder/Tillbehor.png);
+    background-image: url(../img/Index_bilder/tillbehor2.webp);
 }
 
 /* index end */
@@ -408,8 +409,8 @@ font-family: 'Anton', sans-serif;
 }
 
 .cards_images{
-    max-width: 100%;
-    --aspect-ratio: 1.0;
+    width: 100%;
+    aspect-ratio: 1.0;
     object-fit: cover;
     object-position: center;
 }
@@ -435,6 +436,7 @@ flex-direction: column;
 .cards_info_1{
     font-family: 'Anton', sans-serif;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
 .cards_info_2{
