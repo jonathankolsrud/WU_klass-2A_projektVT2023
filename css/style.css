@@ -11,9 +11,7 @@ a{
 .clickable_div{
     width: 100%;
     height: 100%;
-    position:absolute;
-    width:100%;
-    height:100%;
+    position: absolute;
     top:0;
     left:0;
 }
@@ -411,6 +409,7 @@ font-family: 'Anton', sans-serif;
    align-items: center;
    justify-content: center;
    transition: 0.2s;
+   position: relative;
 }
 
 .card_container:hover{
@@ -610,12 +609,14 @@ flex-direction: column;
 #gridwrapper3{
     display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 70px 160px minmax(400px, 80vh) 400px 420px;
+        grid-template-rows: 70px 160px minmax(400px, 90vh) min-content minmax(400px, 90vh) min-content 420px;
         grid-template-areas: 
         "he he"
         "div1 div1"
         "div2 div3"
         "div4 div4"
+        "div5 div6"
+        "div7 div7"
         "fo fo"
 }
 
@@ -626,11 +627,34 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-
 }
 
 .merch_info_h2{
     font-family: 'Anton', sans-serif;
+}
+
+.merch_shop_section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card_container_merch{
+    width: 29%;
+    height:  fit-content;
+    margin: 1%;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    position: relative;
+}
+
+.card_container_merch:hover{
+    scale: 1.02;
+    transition: 0.2s;
 }
 
 #merch_image_section_male{
@@ -640,7 +664,6 @@ flex-direction: column;
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat;
-    
 }
 
 #merch_text_section_male{
@@ -654,7 +677,31 @@ flex-direction: column;
 
 #merch_shop_section_male{
     grid-area: div4;
-    background-color: blue;
+    background-color: white;
+}
+
+#merch_image_section_women{
+    grid-area: div5;
+    background-color:  black;
+    background-image: url(../img/Merch_bilder/female.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat;
+    
+}
+
+#merch_text_section_women{
+    grid-area: div6;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    border: 3px solid rgb(54, 54, 54);
+}
+
+#merch_shop_section_women{
+    grid-area: div7;
+    background-color: white;
 }
 
 
