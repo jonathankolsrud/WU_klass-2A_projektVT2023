@@ -379,6 +379,14 @@ text-decoration: underline;
     align-items: center;
 }
 
+.shop_section_2{
+    grid-area: div2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+
 .shop_info_h2{
 font-size: 25px;
 font-family: 'Anton', sans-serif;
@@ -600,24 +608,104 @@ flex-direction: column;
 /* om_oss_section_4 end*/
 
 
-
-
 /* Om Oss- end */
+
+
+/*Klader*/
+#gridwrapper4{
+    display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 160px 400px 400px 400px 400px 400px 400px 420px;
+        grid-template-areas: 
+        "he"
+        "div1 "
+        "div2"
+        "div3"
+        "div5"
+        "div4 "
+        "div6"
+        "div7"
+        "fo"
+}
+
+.klader_images{
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: rgb(199, 199, 199);
+    position: relative;
+    transition: 0.4s;
+}
+
+.klader_images:hover{
+    transition: 0.4s;
+    transform: scale(1.015);
+    z-index: 0; 
+}
+
+.klader_texts{
+background-color: white;
+border-left: 15px solid white;
+border-right: 15px solid white;
+}
+
+.klader_texts_h3{
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+.klader_texts_p{
+    font-size: 1.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#klader_images_1{
+    grid-area: div2;
+    background-image: url(../img/klader_bilder/cards/klad1.webp);
+}
+
+#klader_texts_1{
+    grid-area: div3;
+}
+
+#klader_images_2{
+    grid-area: div5;
+    background-image: url(../img/klader_bilder/cards/klad2.webp);
+}
+
+#klader_texts_2{
+    grid-area: div4;
+}
+
+#klader_images_3{
+    grid-area: div6;
+    background-image: url(../img/klader_bilder/cards/klad3.webp);
+}
+
+#klader_texts_3{
+    grid-area: div7;
+}
+
+
+/*klader end*/
+
 
 /*merch*/
 
 #gridwrapper3{
     display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 70px 160px minmax(400px, 90vh) min-content minmax(400px, 90vh) min-content 420px;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 160px 400px 300px min-content 400px 300px min-content 420px;
         grid-template-areas: 
-        "he he"
-        "div1 div1"
-        "div2 div3"
-        "div4 div4"
-        "div5 div6"
-        "div7 div7"
-        "fo fo"
+        "he"
+        "div1"
+        "div3"
+        "div2"
+        "div4"
+        "div5"
+        "div6"
+        "div7"
+        "fo"
 }
 
 .merch_info_genders{
@@ -631,18 +719,20 @@ flex-direction: column;
 
 .merch_info_h2{
     font-family: 'Anton', sans-serif;
+    margin-top: 5vh;
 }
 
 .merch_shop_section{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .card_container_merch{
-    width: 29%;
+    width: 80%;
     height:  fit-content;
-    margin: 1%;
+    margin: 4%;
     background-color: rgb(231, 231, 231);
     display: flex;
     flex-direction: column;
@@ -660,7 +750,7 @@ flex-direction: column;
 #merch_image_section_male{
     grid-area: div3;
     background-color:  black;
-    background-image: url(../img/Merch_bilder/male.png);
+    background-image: url(../img/Merch_bilder/male.webp);
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat;
@@ -683,7 +773,7 @@ flex-direction: column;
 #merch_image_section_women{
     grid-area: div5;
     background-color:  black;
-    background-image: url(../img/Merch_bilder/female.png);
+    background-image: url(../img/Merch_bilder/female.webp);
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat;
@@ -903,6 +993,70 @@ flex-direction: column;
 
 
 /*skor end*/
+
+/*Kläder*/
+#gridwrapper4{
+    display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 70px 160px minmax(400px, 90vh) minmax(400px, 90vh) minmax(400px, 90vh) 420px;
+        grid-template-areas: 
+        "he he he he"
+        "div1 div1 div1 div1 "
+        "div2 div2 div2 div3"
+        "div4 div5 div5 div5"
+        "div6 div6 div6 div7"
+        "fo fo fo fo "
+}
+
+.klader_texts_h3{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+}
+
+.klader_texts_p{
+    font-size: 1.6vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*kläder end*/
+
+/*merch*/
+#gridwrapper3{
+    display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 70px 160px minmax(400px, 90vh) min-content minmax(400px, 90vh) min-content 420px;
+        grid-template-areas: 
+        "he he"
+        "div1 div1"
+        "div2 div3"
+        "div4 div4"
+        "div5 div6"
+        "div7 div7"
+        "fo fo"
+}
+
+.merch_shop_section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card_container_merch{
+    width: 29%;
+    height:  fit-content;
+    margin: 1%;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    position: relative;
+}
+
+/*merch_end*/
 
 
 /* Om Oss */
