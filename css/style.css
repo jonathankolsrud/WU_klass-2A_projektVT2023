@@ -574,7 +574,7 @@ flex-direction: column;
 }
 
 #om_oss_section_1_background_image{
-    background-image: url(../img/om_oss_bilder/wardrobe.jpg);
+    background-image: url(../img/om_oss_bilder/wardrobe.webp);
     background-size: cover;
     background-position: center;
     height: 100%;
